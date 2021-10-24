@@ -42,14 +42,14 @@
                 -0.7071067094802856
             ],
             "scale" : [
-                -0.014391214586794376,
-                -0.014391214586794376,
-                -0.014391214586794376
+                -0.017586451023817062,
+                -0.017586451023817062,
+                -0.017586451023817062
             ],
             "translation" : [
-                -0.06565350294113159,
+                0.16147364675998688,
                 0,
-                0
+                -0.26418763399124146
             ]
         },
         {
@@ -79,6 +79,49 @@
                 {
                     "sampler" : 0,
                     "target" : {
+                        "node" : 1,
+                        "path" : "translation"
+                    }
+                },
+                {
+                    "sampler" : 1,
+                    "target" : {
+                        "node" : 1,
+                        "path" : "rotation"
+                    }
+                },
+                {
+                    "sampler" : 2,
+                    "target" : {
+                        "node" : 1,
+                        "path" : "scale"
+                    }
+                }
+            ],
+            "name" : "House_008_Material #126 [House_008]_0Action",
+            "samplers" : [
+                {
+                    "input" : 16,
+                    "interpolation" : "STEP",
+                    "output" : 17
+                },
+                {
+                    "input" : 16,
+                    "interpolation" : "STEP",
+                    "output" : 18
+                },
+                {
+                    "input" : 16,
+                    "interpolation" : "STEP",
+                    "output" : 19
+                }
+            ]
+        },
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
                         "node" : 2,
                         "path" : "translation"
                     }
@@ -101,19 +144,19 @@
             "name" : "voitureAction",
             "samplers" : [
                 {
-                    "input" : 16,
+                    "input" : 20,
                     "interpolation" : "LINEAR",
-                    "output" : 17
+                    "output" : 21
                 },
                 {
-                    "input" : 16,
+                    "input" : 20,
                     "interpolation" : "LINEAR",
-                    "output" : 18
+                    "output" : 22
                 },
                 {
-                    "input" : 16,
+                    "input" : 20,
                     "interpolation" : "LINEAR",
-                    "output" : 19
+                    "output" : 23
                 }
             ]
         }
@@ -399,6 +442,36 @@
         {
             "bufferView" : 16,
             "componentType" : 5126,
+            "count" : 1,
+            "max" : [
+                0.25
+            ],
+            "min" : [
+                0.25
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 17,
+            "componentType" : 5126,
+            "count" : 1,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 18,
+            "componentType" : 5126,
+            "count" : 1,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 19,
+            "componentType" : 5126,
+            "count" : 1,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 20,
+            "componentType" : 5126,
             "count" : 49,
             "max" : [
                 2.0416666666666665
@@ -409,19 +482,19 @@
             "type" : "SCALAR"
         },
         {
-            "bufferView" : 17,
+            "bufferView" : 21,
             "componentType" : 5126,
             "count" : 49,
             "type" : "VEC3"
         },
         {
-            "bufferView" : 18,
+            "bufferView" : 22,
             "componentType" : 5126,
             "count" : 49,
             "type" : "VEC4"
         },
         {
-            "bufferView" : 19,
+            "bufferView" : 23,
             "componentType" : 5126,
             "count" : 49,
             "type" : "VEC3"
@@ -510,23 +583,43 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 196,
+            "byteLength" : 4,
             "byteOffset" : 130336
         },
         {
             "buffer" : 0,
+            "byteLength" : 12,
+            "byteOffset" : 130340
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 16,
+            "byteOffset" : 130352
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12,
+            "byteOffset" : 130368
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 196,
+            "byteOffset" : 130380
+        },
+        {
+            "buffer" : 0,
             "byteLength" : 588,
-            "byteOffset" : 130532
+            "byteOffset" : 130576
         },
         {
             "buffer" : 0,
             "byteLength" : 784,
-            "byteOffset" : 131120
+            "byteOffset" : 131164
         },
         {
             "buffer" : 0,
             "byteLength" : 588,
-            "byteOffset" : 131904
+            "byteOffset" : 131948
         }
     ],
     "samplers" : [
@@ -537,7 +630,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 132492,
+            "byteLength" : 132536,
             "uri" : "house.bin"
         }
     ]
