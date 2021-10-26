@@ -13,7 +13,8 @@
             "nodes" : [
                 0,
                 1,
-                2
+                2,
+                3
             ]
         }
     ],
@@ -50,9 +51,72 @@
                 -0.03819853067398071,
                 2.2431819438934326
             ]
+        },
+        {
+            "mesh" : 3,
+            "name" : "AnyConv.com  LowPolyHouseInterior",
+            "rotation" : [
+                -0.5021505951881409,
+                -0.49784013628959656,
+                0.49784016609191895,
+                -0.5021505355834961
+            ],
+            "scale" : [
+                0.04312742501497269,
+                0.04312742501497269,
+                0.04312742501497269
+            ],
+            "translation" : [
+                0.05513617396354675,
+                0.9483636021614075,
+                0.1024453341960907
+            ]
         }
     ],
     "animations" : [
+        {
+            "channels" : [
+                {
+                    "sampler" : 0,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "translation"
+                    }
+                },
+                {
+                    "sampler" : 1,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "rotation"
+                    }
+                },
+                {
+                    "sampler" : 2,
+                    "target" : {
+                        "node" : 0,
+                        "path" : "scale"
+                    }
+                }
+            ],
+            "name" : "MaisonAction",
+            "samplers" : [
+                {
+                    "input" : 20,
+                    "interpolation" : "LINEAR",
+                    "output" : 21
+                },
+                {
+                    "input" : 20,
+                    "interpolation" : "LINEAR",
+                    "output" : 22
+                },
+                {
+                    "input" : 20,
+                    "interpolation" : "LINEAR",
+                    "output" : 23
+                }
+            ]
+        },
         {
             "channels" : [
                 {
@@ -80,19 +144,19 @@
             "name" : "voitureAction",
             "samplers" : [
                 {
-                    "input" : 16,
+                    "input" : 24,
                     "interpolation" : "LINEAR",
-                    "output" : 17
+                    "output" : 25
                 },
                 {
-                    "input" : 16,
+                    "input" : 24,
                     "interpolation" : "LINEAR",
-                    "output" : 18
+                    "output" : 26
                 },
                 {
-                    "input" : 16,
+                    "input" : 24,
                     "interpolation" : "LINEAR",
-                    "output" : 19
+                    "output" : 27
                 }
             ]
         }
@@ -140,6 +204,16 @@
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
                     "index" : 3
+                },
+                "metallicFactor" : 0
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 4
                 },
                 "metallicFactor" : 0
             }
@@ -196,6 +270,20 @@
                     "material" : 3
                 }
             ]
+        },
+        {
+            "name" : "AnyConv.com  LowPolyHouseInterior",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 16,
+                        "NORMAL" : 17,
+                        "TEXCOORD_0" : 18
+                    },
+                    "indices" : 19,
+                    "material" : 4
+                }
+            ]
         }
     ],
     "textures" : [
@@ -214,6 +302,10 @@
         {
             "sampler" : 0,
             "source" : 3
+        },
+        {
+            "sampler" : 0,
+            "source" : 4
         }
     ],
     "images" : [
@@ -236,6 +328,11 @@
             "mimeType" : "image/png",
             "name" : "route",
             "uri" : "textures/route.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "interieur",
+            "uri" : "textures/interieur.png"
         }
     ],
     "accessors" : [
@@ -378,9 +475,43 @@
         {
             "bufferView" : 16,
             "componentType" : 5126,
-            "count" : 59,
+            "count" : 200521,
             "max" : [
-                2.4583333333333335
+                22.366554260253906,
+                39.51304626464844,
+                21.746898651123047
+            ],
+            "min" : [
+                -15.84361457824707,
+                -33.34644317626953,
+                -23.860824584960938
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 17,
+            "componentType" : 5126,
+            "count" : 200521,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 18,
+            "componentType" : 5126,
+            "count" : 200521,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 19,
+            "componentType" : 5125,
+            "count" : 218037,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 20,
+            "componentType" : 5126,
+            "count" : 120,
+            "max" : [
+                5
             ],
             "min" : [
                 0.041666666666666664
@@ -388,21 +519,51 @@
             "type" : "SCALAR"
         },
         {
-            "bufferView" : 17,
+            "bufferView" : 21,
             "componentType" : 5126,
-            "count" : 59,
+            "count" : 120,
             "type" : "VEC3"
         },
         {
-            "bufferView" : 18,
+            "bufferView" : 22,
             "componentType" : 5126,
-            "count" : 59,
+            "count" : 120,
             "type" : "VEC4"
         },
         {
-            "bufferView" : 19,
+            "bufferView" : 23,
             "componentType" : 5126,
-            "count" : 59,
+            "count" : 120,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 24,
+            "componentType" : 5126,
+            "count" : 119,
+            "max" : [
+                4.958333333333333
+            ],
+            "min" : [
+                0.041666666666666664
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 25,
+            "componentType" : 5126,
+            "count" : 119,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 26,
+            "componentType" : 5126,
+            "count" : 119,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 27,
+            "componentType" : 5126,
+            "count" : 119,
             "type" : "VEC3"
         }
     ],
@@ -489,23 +650,63 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 236,
+            "byteLength" : 2406252,
             "byteOffset" : 134120
         },
         {
             "buffer" : 0,
-            "byteLength" : 708,
-            "byteOffset" : 134356
+            "byteLength" : 2406252,
+            "byteOffset" : 2540372
         },
         {
             "buffer" : 0,
-            "byteLength" : 944,
-            "byteOffset" : 135064
+            "byteLength" : 1604168,
+            "byteOffset" : 4946624
         },
         {
             "buffer" : 0,
-            "byteLength" : 708,
-            "byteOffset" : 136008
+            "byteLength" : 872148,
+            "byteOffset" : 6550792
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 480,
+            "byteOffset" : 7422940
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1440,
+            "byteOffset" : 7423420
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1920,
+            "byteOffset" : 7424860
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1440,
+            "byteOffset" : 7426780
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 476,
+            "byteOffset" : 7428220
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1428,
+            "byteOffset" : 7428696
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1904,
+            "byteOffset" : 7430124
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1428,
+            "byteOffset" : 7432028
         }
     ],
     "samplers" : [
@@ -516,7 +717,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 136716,
+            "byteLength" : 7433456,
             "uri" : "house.bin"
         }
     ]
