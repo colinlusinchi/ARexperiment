@@ -30,7 +30,7 @@
             "translation" : [
                 0.16147364675998688,
                 0,
-                -0.26418763399124146
+                -0.03597775101661682
             ]
         },
         {
@@ -141,8 +141,7 @@
                 "baseColorTexture" : {
                     "index" : 3
                 },
-                "metallicFactor" : 0,
-                "roughnessFactor" : 0.7454545497894287
+                "metallicFactor" : 0
             }
         }
     ],
@@ -354,7 +353,7 @@
             "min" : [
                 -5.1369853019714355,
                 -0.03734579682350159,
-                -1.7227879762649536
+                -1.5748871564865112
             ],
             "type" : "VEC3"
         },
@@ -379,9 +378,9 @@
         {
             "bufferView" : 16,
             "componentType" : 5126,
-            "count" : 50,
+            "count" : 59,
             "max" : [
-                2.0833333333333335
+                2.4583333333333335
             ],
             "min" : [
                 0.041666666666666664
@@ -391,19 +390,19 @@
         {
             "bufferView" : 17,
             "componentType" : 5126,
-            "count" : 50,
+            "count" : 59,
             "type" : "VEC3"
         },
         {
             "bufferView" : 18,
             "componentType" : 5126,
-            "count" : 50,
+            "count" : 59,
             "type" : "VEC4"
         },
         {
             "bufferView" : 19,
             "componentType" : 5126,
-            "count" : 50,
+            "count" : 59,
             "type" : "VEC3"
         }
     ],
@@ -490,23 +489,23 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 200,
+            "byteLength" : 236,
             "byteOffset" : 134248
         },
         {
             "buffer" : 0,
-            "byteLength" : 600,
-            "byteOffset" : 134448
+            "byteLength" : 708,
+            "byteOffset" : 134484
         },
         {
             "buffer" : 0,
-            "byteLength" : 800,
-            "byteOffset" : 135048
+            "byteLength" : 944,
+            "byteOffset" : 135192
         },
         {
             "buffer" : 0,
-            "byteLength" : 600,
-            "byteOffset" : 135848
+            "byteLength" : 708,
+            "byteOffset" : 136136
         }
     ],
     "samplers" : [
@@ -517,7 +516,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 136448,
+            "byteLength" : 136844,
             "uri" : "house.bin"
         }
     ]
